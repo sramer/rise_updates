@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rise Updates</title>
+{% load static %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="icon" href="{% static 'icon.png' %}" type="image/png">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'rga.css' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+  body
+  {
+    background-image: url("{% static 'folk-pattern.svg' %}");
+  }
+  </style>
+  </head>
+
+  <body>
+
+  <nav class="navbar fixed-top navbar-expand-md navbar-danger bg-dark justify-content-between">
+  <a class="navbar-brand" href="#">RISE UPDATES</a>
+  <a class="nav-link text-white" href="#gandhi">GANDHI</a>
+</nav>
+<br>
+<br>
+<br>
+<div class="maincontent text-dark">
+<h1 class="welcome1 animated flipInX delay-0.5s">Gandhi Updates</h1>
+</div>
+<br>
+<br>
+<br>
+
+<div class="container">
+  <div class="card-deck">
+    <div class="card animated flipInX delay-1s">
+    <div class="card-body text-center" style="height: auto">
+    <h2>{{ gandhi.gandhi_view.update_name }}</h2>
+    {% if gandhi.gandhi_image %}
+    <img src="{{ gandhi.gandhi_image.url }}" class="img-fluid" alt="Responsive image"/>
+    {% else %}
+    {% endif %}
+    <p>{{ gandhi.gandhi_matter }}</p>
+  <button class="btn btn-primary fa fa-arrow-left" type="button" value="Back to main page" onclick="location.href='{% url 'index' %}'"> Back to main page</button>
+   </div>
+ </div>
+</div>
+ </div>
+
+ <br>
+ <br>
+ <br>
+ <br>
+
+
+
+<div class="container pt-4 bg-dark" role="contentinfo" data-swifttype-index="false">
+  <div class="card-deck">
+   <br>
+
+<nav class="menu secondary secondary-menu">
+  <ul id="footer-menu" class="links clearfix">
+    <li class="menu-852 first">
+      <a>Website developed by Sairam & Akhil Naidu.</a>
+    </li>
+    <br>
+    <li class="menu-850">
+      <a>  Website hosted RGAN CSE.</a>
+      <li>
+        <br>
+        <li class="menu-851 last">
+          <a>  COPYRIGHT &copy2018 RISE KRISHNA SAI GROUP OF INSTITUTUIONS.</a>
+          <li>
+
+      </ul>
+    </nav>
+
+<nav class="menu social-media-menu">
+  <ul class="links" id="social-menu">
+    <li class="menu-992 first">
+      <a href="https://www.facebook.com/risegroupsongole" title="on facebook" class="fa fa-facebook-square" target="_blank"> LIKE US ON FACEBOOK</a>
+    </li>
+    <br>
+    <li class="menu-923">
+      <a href="http://risegroup.edu.in" title="college website" class="college" target="_blank"> RISE GANDHI WEBSITE</a>
+    </li>
+    <li class="menu-192777 last">
+      <a href="http://www.risekrishnasaipolytechnic.edu.in" title="polytechnic website" class="polytechnic-college" target="_blank"> RISE POLYTECHNIC WEBSITE</a>
+    </li>
+    <li class="menu-192777 last">
+      <a href="http://www.risekrishnasaiprakasam.edu.in" title="polytechnic website" class="rise-prakasam" target="_blank"> RISE PRAKASAM WEBSITE</a>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+</body>
+</html>

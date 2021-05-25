@@ -1,0 +1,233 @@
+@viewport{
+    zoom: 1.0;
+    width: device-width;
+}
+
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+.maincontent
+{
+
+}
+#pkborder
+{
+  border-style: solid;
+}
+#gnborder
+{
+  border-style: solid;
+}
+#ptborder
+{
+  border-style: solid;
+}
+
+#welcome3
+{
+	text-decoration: underline;
+	text-align:center;
+}
+#pbuttons
+{
+	margin-left: 90%;
+	position: fixed;
+}
+
+#pkcard-text
+{
+	margin-left: 40%;
+}
+
+#gncard-text
+{
+	margin-left: 40%;
+}
+
+#ptcard-text
+{
+	margin-left: 40%;
+}
+
+#prlink
+{
+	font-size: 20px;
+  list-style-type: none;
+  border-bottom: solid;
+}
+
+#gnlink
+{
+	font-size: 20px;
+  list-style-type: none;
+  border-bottom: solid;
+}
+
+#ptlink
+{
+	font-size: 20px;
+  list-style-type: none;
+  border-bottom: solid;
+}
+
+
+
+#pkdate
+{
+	background-color: #ccffff;
+}
+
+#gndate
+{
+	background-color: #ccffff;
+}
+
+#ptdate
+{
+	background-color: #ccffff;
+}
+
+#follow
+{
+	font-weight:lighter;
+	font-size:20px;
+	color: #b3ffff;
+	text-align:left;
+	text-decoration: underline;
+	margin-top:0%;
+	padding-top:50%;
+}
+
+#facebook
+{
+	list-style: none;
+	color: #b3ffff;
+	font-size:20px;
+	margin: 10px 30x;
+	padding:20px 20px;
+	border-radius:50%;
+	cursor: pointer;
+}
+
+#twitter
+{
+	list-style: none;
+	color: #b3ffff;
+	font-size:20px;
+	padding:20px 20px;
+	border-radius:50%;
+	cursor: pointer;
+}
+
+#instagram
+{
+	list-style: none;
+	font-size:20px;
+	color: #b3ffff;
+	padding:20px 20px;
+	border-radius:50%;
+	transition: .5s;
+	cursor: pointer;
+}
+
+#gmail
+{
+	list-style: none;
+	font-size:20px;
+	color: #b3ffff;
+	padding:20px 20px;
+	border-radius:50%;
+	transition: .5s;
+	cursor: pointer;
+}
+
+#facebook:hover
+{
+	color:#3b5998;
+	transition:1s;
+	transform: rotateX(360deg);
+}
+
+#twitter:hover
+{
+	color:#0084FF;
+	transition:1s;
+	transform: rotateX(360deg);
+}
+
+#instagram:hover
+{
+	color: #fbad50;
+	transition:1s;
+	transform: rotateX(360deg);
+}
+
+#gmail:hover
+{
+	color:#F00;
+	transition:1s;
+	transform: rotateX(360deg);
+}
+
+#host
+{
+	text-align: left;
+	color: white;
+  font-size: 12px;
+
+}
+
+#designers
+{
+  text-align: center;
+	color: white;
+  font-size: 12px;
+}
+
+#copy
+{
+	text-align:right;
+	color: white;
+  font-size: 12px;
+}
+
+.fa-facebook-square {
+  background: dark;
+  color: white;
+  font-size: 14px;
+
+}
+
+#footer-menu
+{
+  color: white;
+  list-style-type: none;
+}
+
+#social-menu
+{
+  list-style-type: none;
+}
+
+.college
+{
+  color: white;
+  font-size: 14px;
+}
+
+.polytechnic-college
+{
+  color: white;
+  font-size: 14px;
+}
+.rise-prakasam
+{
+	color: white;
+	font-size: 14px;
+}

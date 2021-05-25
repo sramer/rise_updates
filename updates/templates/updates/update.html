@@ -1,0 +1,14 @@
+{% extends "updates/base.html" %}
+{% load static %}
+
+{% block title %}
+    Updates
+{% endblock %}
+
+{% block body %}
+     <h2>{{ update.update_view.update_name }}</h2>
+     <img src="{{ update.update_image.url }}" height="100px" width="150px"/>
+     <p>{{ update.update_matter }}</p>
+     </ul>
+     <a href="{% url 'index' %}">Back to full listings</a>
+{% endblock %}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>Rise Updates</title>
+  {% load static %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="{% static 'icon.png' %}" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'main.css' %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    body
+    {
+      background-image: url("{% static 'circuit.svg' %}");
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">RISE UPDATES</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav justify-content-right">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#prakasam">PRAKASAM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#gandhi">GANDHI</a>
+        </li>
+        <li class="nav-item justify-content-between">
+          <a class="nav-link text-white" href="#polytechnic">POLYTECHNIC</a>
+        </li>
+  	  </ul>
+    </div>
+  </nav>
+  <br>
+  <br>
+
+  <br>
+<div class="maincontent text-dark">
+<h1 align="center" class="welcome1 animated bounceInDown delay-0.5s">RISE KRISHNA SAI GROUP OF INSTITUTIONS</h1>
+
+</div>
+<br>
+<br>
+<br>
+<div id="cardbody">
+<div class="container">
+  <div class="card-deck">
+    <div class="card animated bounceInLeft delay-1s">
+      <div class="card-body" style="height:auto">
+
+
+        <div id="prakasam"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <ul>
+        <h3 class="text-center text-dark">Prakasam Updates</h3>
+         <div id="pkborder">
+          {% for prakasam in prakasams %}
+            <h6 id="pkdate">{{ prakasam.prakasam_view.update_date }}</h6>
+              <li id="prlink">
+                <a href="{% url 'prakasam' prakasam.id %}">{{ prakasam }}</a>
+              </li>
+              {% endfor %}
+            </div>
+            </ul>
+
+            <div id="gandhi"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <ul id="gandhi">
+            <h3 class="text-center text-dark">Gandhi Updates</h3>
+            <div id="gnborder">
+              {% for gandhi in gandhis %}
+                  <h6 id="gndate">{{ gandhi.gandhi_view.update_date }}</h6>
+                  <li id="gnlink">
+                  <a href="{% url 'gandhi' gandhi.id %}">{{ gandhi }}</a>
+                  </li>
+                  {% endfor %}
+                </div>
+                </ul>
+
+                <div id="polytechnic"></div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <ul id="polytechnic">
+                <h3 class="text-center text-dark">Polytechnic Updates</h3>
+                <div id="ptborder">
+                    {% for polytechnic in polytechnics %}
+                    <h6 id="ptdate">{{ polytechnic.polytechnic_view.update_date }}</h6>
+                      <li id="ptlink">
+                      <a href="{% url 'polytechnic' polytechnic.id %}">{{ polytechnic }}</a>
+                      </li>
+                      {% endfor %}
+                    </div>
+                    </ul>
+      </div>
+    </div>
+
+    </div>
+
+    </div>
+  </div>
+</div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+    <div class="container pt-4 bg-dark" role="contentinfo" data-swifttype-index="false">
+      <div class="card-deck">
+       <br>
+
+    <nav class="menu secondary secondary-menu">
+      <ul id="footer-menu" class="links clearfix">
+        <li class="menu-852 first">
+          <a>Website developed by Sairam & Akhil Naidu.</a>
+        </li>
+        <br>
+        <li class="menu-850">
+          <a>  Website hosted by RGAN CSE.</a>
+          <li>
+            <br>
+            <li class="menu-851 last">
+              <a>  COPYRIGHT &copy2018 RISE KRISHNA SAI GROUP OF INSTITUTUIONS.</a>
+              <li>
+
+          </ul>
+        </nav>
+
+    <nav class="menu social-media-menu">
+      <ul class="links" id="social-menu">
+        <li class="menu-992 first">
+          <a href="https://www.facebook.com/risegroupsongole" title="on facebook" class="fa fa-facebook-square" target="_blank"> RISE GROUP FACEBOOK PAGE</a>
+        </li>
+        <br>
+        <li class="menu-923">
+          <a href="http://risegroup.edu.in" title="college website" class="college" target="_blank"> RISE GANDHI WEBSITE</a>
+        </li>
+        <li class="menu-975">
+          <a href="http://www.risekrishnasaipolytechnic.edu.in" title="polytechnic website" class="polytechnic-college" target="_blank"> RISE POLYTECHNIC WEBSITE</a>
+        </li>
+        <li class="menu-192777 last">
+          <a href="http://www.risekrishnasaiprakasam.edu.in" title="polytechnic website" class="rise-prakasam" target="_blank"> RISE PRAKASAM WEBSITE</a>
+        </li>
+
+      </ul>
+    </nav>
+    </div>
+    </div>
+    </body>
+    </html>
